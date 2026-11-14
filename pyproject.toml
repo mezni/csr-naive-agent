@@ -1,0 +1,27 @@
+[project]
+name = "agentic-ai-engineering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "M.Mezni", email = "mamezni@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.51.0",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agentic-ai-engineering = "agentic_ai_engineering:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
